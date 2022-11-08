@@ -8,6 +8,8 @@ import {
   responsiveFontSizes,
 } from '@mui/material/styles'
 
+import ContentRouter from './components/ContentRouter'
+
 
 let theme = createTheme({
   overrides: {
@@ -97,6 +99,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      <ContentRouter />
     </ThemeProvider>
   )
 }
