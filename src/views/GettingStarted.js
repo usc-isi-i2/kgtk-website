@@ -1,11 +1,13 @@
 import React from 'react'
 
+import Content from '../components/Content'
+
 
 const GettingStarted = () => {
   return (
-    <React.Fragment>
+    <Content>
       Getting Started
-    </React.Fragment>
+    </Content>
   )
 }
 

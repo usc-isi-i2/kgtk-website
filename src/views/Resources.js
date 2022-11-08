@@ -1,11 +1,13 @@
 import React from 'react'
 
+import Content from '../components/Content'
+
 
 const Resources = () => {
   return (
-    <React.Fragment>
+    <Content>
       Resources
-    </React.Fragment>
+    </Content>
   )
 }
 

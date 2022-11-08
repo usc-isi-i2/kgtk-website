@@ -1,11 +1,13 @@
 import React from 'react'
 
+import Content from '../components/Content'
+
 
 const UseCases = () => {
   return (
-    <React.Fragment>
+    <Content>
       Use Cases
-    </React.Fragment>
+    </Content>
   )
 }
 

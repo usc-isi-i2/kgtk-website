@@ -1,11 +1,13 @@
 import React from 'react'
 
+import Content from '../components/Content'
+
 
 const Data = () => {
   return (
-    <React.Fragment>
+    <Content>
       Data
-    </React.Fragment>
+    </Content>
   )
 }
 
