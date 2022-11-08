@@ -5,7 +5,8 @@ import Toolbar from '@mui/material/Toolbar'
 import IconButton from '@mui/material/IconButton'
 import Typography from '@mui/material/Typography'
 import GitHubIcon from '@mui/icons-material/GitHub'
-import MenuIcon from '@mui/icons-material/Menu'
+
+import Logo from './Logo'
 
 
 const Header = () => {
@@ -21,7 +22,9 @@ const Header = () => {
             color="inherit"
             aria-label="menu"
             sx={{ mr: 2 }} >
-            <MenuIcon />
+            <div style={{ width: '40px' }}>
+              <Logo />
+            </div>
           </IconButton>
 
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
