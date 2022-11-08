@@ -5,28 +5,37 @@ import {
 } from 'react-router-dom'
 
 
+import Home from '../views/Home'
+import Tutorials from '../views/Tutorials'
+import GettingStarted from '../views/GettingStarted'
+import Data from '../views/Data'
+import Resources from '../views/Resources'
+import UseCases from '../views/UseCases'
+import About from '../views/About'
+
+
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>KGTK</div>,
+    element: <Home />,
   }, {
     path: "/tutorials",
-    element: <div>tutorials</div>,
+    element: <Tutorials />,
   }, {
     path: "/getting-started",
-    element: <div>getting started</div>,
+    element: <GettingStarted />,
   }, {
     path: "/data",
-    element: <div>data</div>,
+    element: <Data />,
   }, {
     path: "/resources",
-    element: <div>resources</div>,
+    element: <Resources />,
   }, {
     path: "/use-cases",
-    element: <div>use cases</div>,
+    element: <UseCases />
   }, {
     path: "/about",
-    element: <div>about</div>,
+    element: <About />,
   }
 ])
 
