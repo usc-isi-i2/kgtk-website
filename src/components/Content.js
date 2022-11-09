@@ -1,5 +1,5 @@
 import React from 'react'
-import Box from '@mui/material/Box'
+import Toolbar from '@mui/material/Toolbar'
 
 import Header from './Header'
 
@@ -7,10 +7,11 @@ import Header from './Header'
 const Content = ({children}) => {
 
   return (
-    <Box sx={{ mt: 10 }}>
+    <React.Fragment>
       <Header />
+      <Toolbar />
       {children}
-    </Box>
+    </React.Fragment>
   )
 }
 
