@@ -11,6 +11,7 @@ import GitHubIcon from '@mui/icons-material/GitHub'
 import { styled } from '@mui/material/styles'
 
 import Logo from './Logo'
+import routes from '../content/routes'
 
 
 const StyledAppBar = styled(AppBar)(
@@ -23,30 +24,6 @@ const StyledAppBar = styled(AppBar)(
     }
   `,
 )
-
-
-const routes = [{
-  'name': 'Home',
-  'path': '/',
-}, {
-  'name': 'Tutorials',
-  'path': '/tutorials',
-}, {
-  'name': 'Getting Started',
-  'path': '/getting-started',
-}, {
-  'name': 'Data',
-  'path': '/data',
-}, {
-  'name': 'Resources',
-  'path': '/resources',
-}, {
-  'name': 'Use Cases',
-  'path': '/use-cases',
-}, {
-  'name': 'About',
-  'path': '/about',
-}]
 
 
 const Header = () => {
