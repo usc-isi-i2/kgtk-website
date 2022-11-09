@@ -5,8 +5,21 @@ import Toolbar from '@mui/material/Toolbar'
 import IconButton from '@mui/material/IconButton'
 import Typography from '@mui/material/Typography'
 import GitHubIcon from '@mui/icons-material/GitHub'
+import { styled } from '@mui/material/styles'
 
 import Logo from './Logo'
+
+
+const StyledAppBar = styled(AppBar)(
+  ({ theme }) => `
+    background-color: #fefefe;
+    color: #333;
+
+    svg {
+      width: ${theme.spacing(4)};
+    }
+  `,
+)
 
 
 const Header = () => {
@@ -14,7 +27,8 @@ const Header = () => {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" >
+      <StyledAppBar position="static" >
+
         <Toolbar>
           <IconButton
             size="large"
@@ -22,9 +36,7 @@ const Header = () => {
             color="inherit"
             aria-label="menu"
             sx={{ mr: 2 }} >
-            <div style={{ width: '40px' }}>
               <Logo />
-            </div>
           </IconButton>
 
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
@@ -43,9 +55,9 @@ const Header = () => {
               target="_blank">
               <GitHubIcon fontSize="large" />
           </IconButton>
-
         </Toolbar>
-      </AppBar>
+
+      </StyledAppBar>
     </Box>
   )
 }
