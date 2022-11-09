@@ -25,6 +25,9 @@ const StyledAppBar = styled(AppBar)(
 
 
 const routes = [{
+  'name': 'Home',
+  'path': '/',
+}, {
   'name': 'Tutorials',
   'path': '/tutorials',
 }, {
