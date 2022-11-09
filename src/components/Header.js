@@ -1,6 +1,8 @@
 import React from 'react'
 import Box from '@mui/material/Box'
+import Button from '@mui/material/Button'
 import AppBar from '@mui/material/AppBar'
+import Divider from '@mui/material/Divider'
 import Toolbar from '@mui/material/Toolbar'
 import IconButton from '@mui/material/IconButton'
 import Typography from '@mui/material/Typography'
@@ -22,8 +24,10 @@ const StyledAppBar = styled(AppBar)(
 )
 
 
-const Header = () => {
+const navItems = ['Home', 'About', 'Contact']
 
+
+const Header = () => {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -42,6 +46,16 @@ const Header = () => {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             KGTK - Knowledge Graph ToolKit
           </Typography>
+
+          <Divider />
+
+          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+            {navItems.map((item) => (
+              <Button key={item} color="secondary" sx={{ color: '#333' }}>
+                {item}
+              </Button>
+            ))}
+          </Box>
 
           <IconButton
             size="large"
