@@ -3,7 +3,7 @@ import React from 'react'
 
 const Logo = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000" className="logo">
       <defs>
         <filter id="a" width="107.3%" height="107.3%" x="-3.7%" y="-2.6%" filterUnits="objectBoundingBox">
           <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>

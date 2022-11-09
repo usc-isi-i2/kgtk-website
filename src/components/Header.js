@@ -25,7 +25,7 @@ const StyledAppBar = styled(AppBar)(
     background-color: #fefefe;
     color: #333;
 
-    svg {
+    svg.logo {
       width: ${theme.spacing(4)};
     }
   `,
@@ -70,7 +70,6 @@ const Header = () => {
         <Toolbar sx={{ flexGrow: 1 }}>
           <IconButton
             onClick={() => navigate('/')}
-            size="large"
             edge="start"
             color="inherit"
             aria-label="menu"
@@ -103,15 +102,17 @@ const Header = () => {
             ))}
           </Box>
 
+          <Divider />
+
           <IconButton
             edge="end"
             color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2, display: { xs: 'none', sm: 'block' } }}
-              href="https://github.com/usc-isi-i2/kgtk"
-              title="Knowledge Graph ToolKit"
-              rel="noopener noreferrer nofollow"
-              target="_blank">
+            aria-label="github"
+            sx={{ mr: 2 }}
+            href="https://github.com/usc-isi-i2/kgtk"
+            title="Knowledge Graph ToolKit"
+            rel="noopener noreferrer nofollow"
+            target="_blank">
               <GitHubIcon fontSize="large" />
           </IconButton>
 
