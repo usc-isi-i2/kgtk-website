@@ -24,7 +24,25 @@ const StyledAppBar = styled(AppBar)(
 )
 
 
-const navItems = ['Home', 'About', 'Contact']
+const routes = [{
+  'name': 'Tutorials',
+  'path': '/tutorials',
+}, {
+  'name': 'Getting Started',
+  'path': '/getting-started',
+}, {
+  'name': 'Data',
+  'path': '/data',
+}, {
+  'name': 'Resources',
+  'path': '/resources',
+}, {
+  'name': 'Use Cases',
+  'path': '/use-cases',
+}, {
+  'name': 'About',
+  'path': '/about',
+}]
 
 
 const Header = () => {
@@ -50,9 +68,13 @@ const Header = () => {
           <Divider />
 
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            {navItems.map((item) => (
-              <Button key={item} color="secondary" sx={{ color: '#333' }}>
-                {item}
+            {routes.map(route => (
+              <Button
+                href={route.path}
+                key={route.name}
+                color="secondary"
+                sx={{ color: '#333' }}>
+                {route.name}
               </Button>
             ))}
           </Box>
