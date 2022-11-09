@@ -53,6 +53,7 @@ const Header = () => {
 
         <Toolbar>
           <IconButton
+            href={'/'}
             size="large"
             edge="start"
             color="inherit"
