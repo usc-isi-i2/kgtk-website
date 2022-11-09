@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
 import AppBar from '@mui/material/AppBar'
@@ -50,13 +51,15 @@ const routes = [{
 
 const Header = () => {
 
+  const navigate = useNavigate()
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <StyledAppBar position="static" >
 
         <Toolbar>
           <IconButton
-            href={'/'}
+            onClick={() => navigate('/')}
             size="large"
             edge="start"
             color="inherit"
@@ -74,7 +77,7 @@ const Header = () => {
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {routes.map(route => (
               <Button
-                href={route.path}
+                onClick={() => navigate(route.path)}
                 key={route.name}
                 color="secondary"
                 sx={{ color: '#333' }}>
