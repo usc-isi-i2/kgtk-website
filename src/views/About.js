@@ -10,7 +10,7 @@ const About = () => {
     <Content>
       <h1>Something about the project and about us</h1>
       {links.map(link => (
-        <Link href={link.link} underline="hover">
+        <Link href={link.url} underline="hover">
           <h4>{link.name}</h4>
         </Link>
       ))}

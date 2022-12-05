@@ -10,7 +10,7 @@ const GettingStarted = () => {
     <Content>
       <h1>Getting Started</h1>
       {links.map(link => (
-        <Link href={link.link} underline="hover">
+        <Link href={link.url} underline="hover">
           <h4>{link.name}</h4>
         </Link>
       ))}
