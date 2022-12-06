@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/static/js/main.e5de9f53.js",
-    "static/js/787.216a21da.chunk.js": "/static/js/787.216a21da.chunk.js",
-    "index.html": "/index.html",
-    "main.e5de9f53.js.map": "/static/js/main.e5de9f53.js.map",
-    "787.216a21da.chunk.js.map": "/static/js/787.216a21da.chunk.js.map"
+    "main.js": "/kgtk-website/static/js/main.04c24a40.js",
+    "static/js/787.216a21da.chunk.js": "/kgtk-website/static/js/787.216a21da.chunk.js",
+    "index.html": "/kgtk-website/index.html",
+    "main.04c24a40.js.map": "/kgtk-website/static/js/main.04c24a40.js.map",
+    "787.216a21da.chunk.js.map": "/kgtk-website/static/js/787.216a21da.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.e5de9f53.js"
+    "static/js/main.04c24a40.js"
   ]
 }
