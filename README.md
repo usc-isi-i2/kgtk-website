@@ -9,3 +9,7 @@ Website for all things KGTK
 4. Start the development server with `npm start`
 5. Verify that the changes made are reflected in the browser
 6. Commit your changes to the `develop` branch just in case
+
+# Deployment
+
+1. Run `npm run deploy` to update the published website with any changes made
