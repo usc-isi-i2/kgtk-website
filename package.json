@@ -1,6 +1,6 @@
 {
   "name": "kgtk-website",
-  "homepage": "/kgtk-website",
+  "homepage": "https://kgtk.isi.edu/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
