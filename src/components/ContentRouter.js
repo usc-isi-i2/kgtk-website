@@ -7,7 +7,10 @@ import {
 import routes from '../content/routes'
 
 
-const router = createBrowserRouter(routes)
+const options = {
+  basename: process.env.PUBLIC_URL,
+}
+const router = createBrowserRouter(routes, options)
 
 
 const ContentRouter = () => (
