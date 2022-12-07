@@ -10,7 +10,7 @@ const Data = () => {
     <Content>
       <h1>Get your data here:</h1>
       {links.map(link => (
-        <Link href={link.url} underline="hover">
+        <Link href={link.url} underline="hover" target="_blank" rel="noopener noreferrer">
           <h4>{link.name}</h4>
         </Link>
       ))}
