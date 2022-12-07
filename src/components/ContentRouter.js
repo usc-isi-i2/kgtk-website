@@ -4,13 +4,14 @@ import {
   RouterProvider,
 } from 'react-router-dom'
 
+import Home from '../views/Home'
 import routes from '../content/routes'
 
 
 const router = createHashRouter(routes)
 
 const ContentRouter = () => (
-  <RouterProvider router={router} />
+  <RouterProvider router={router} fallbackElement={<Home />} />
 )
 
 
