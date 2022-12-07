@@ -1,14 +1,13 @@
 import React from 'react'
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from 'react-router-dom'
 
 import routes from '../content/routes'
 
 
-const router = createBrowserRouter(routes)
-
+const router = createHashRouter(routes)
 
 const ContentRouter = () => (
   <RouterProvider router={router} />
