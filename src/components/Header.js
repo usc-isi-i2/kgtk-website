@@ -23,6 +23,7 @@ import routes from '../content/routes'
 const StyledAppBar = styled(AppBar)(
   ({ theme }) => `
     background-color: #fefefe;
+    position: fixed;
     color: #333;
 
     svg.logo {
