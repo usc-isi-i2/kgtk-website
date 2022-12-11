@@ -2,6 +2,9 @@ import React from 'react'
 
 import { styled } from '@mui/material/styles'
 
+import '@fontsource/montserrat/700.css'
+
+import { info } from '../content/home'
 import bannerImage from '../images/banner.jpg'
 
 
@@ -20,15 +23,34 @@ const BannerImage = styled('div')(`
 `)
 
 
+const Title = styled('h1')(`
+  display: inline-block;
+  width: 100%;
+  padding: 0 5vw;
+  text-align: right;
+  font-family: "Montserrat";
+  font-size: 7rem;
+  color: #333;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+`)
+
+
 const Banner = () => {
 
   const renderBannerImage = () => {
     return  <BannerImage />
   }
 
+  const renderProjectInfo = () => {
+    return <Title>{info.title}</Title>
+  }
+
   return (
     <React.Fragment>
       {renderBannerImage()}
+      {renderProjectInfo()}
     </React.Fragment>
   )
 }
