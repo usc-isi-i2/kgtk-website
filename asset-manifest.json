@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.02a84a21.css",
-    "main.js": "/static/js/main.7c2ee417.js",
+    "main.css": "/static/css/main.d6de7169.css",
+    "main.js": "/static/js/main.0efe4617.js",
     "static/js/787.216a21da.chunk.js": "/static/js/787.216a21da.chunk.js",
     "static/media/banner.jpg": "/static/media/banner.5733b9e6f456a633611f.jpg",
-    "static/media/montserrat-all-700-normal.woff": "/static/media/montserrat-all-700-normal.168d5b114e5a6d216802.woff",
-    "static/media/montserrat-latin-700-normal.woff2": "/static/media/montserrat-latin-700-normal.56c09b9a46af6a54eeb3.woff2",
-    "static/media/montserrat-latin-ext-700-normal.woff2": "/static/media/montserrat-latin-ext-700-normal.ed2b8a3421aea40bea12.woff2",
-    "static/media/montserrat-cyrillic-ext-700-normal.woff2": "/static/media/montserrat-cyrillic-ext-700-normal.a113ef18975312602ee1.woff2",
-    "static/media/montserrat-cyrillic-700-normal.woff2": "/static/media/montserrat-cyrillic-700-normal.2a599b68747a45fad239.woff2",
-    "static/media/montserrat-vietnamese-700-normal.woff2": "/static/media/montserrat-vietnamese-700-normal.810d24ff481f2abee5c1.woff2",
+    "static/media/ubuntu-all-700-normal.woff": "/static/media/ubuntu-all-700-normal.8c943554af3c5cb1937f.woff",
+    "static/media/ubuntu-latin-ext-700-normal.woff2": "/static/media/ubuntu-latin-ext-700-normal.195e8846659378454b5e.woff2",
+    "static/media/ubuntu-latin-700-normal.woff2": "/static/media/ubuntu-latin-700-normal.7ceec6fd3e7d00630b25.woff2",
+    "static/media/ubuntu-cyrillic-ext-700-normal.woff2": "/static/media/ubuntu-cyrillic-ext-700-normal.14321031e27c465731aa.woff2",
+    "static/media/ubuntu-cyrillic-700-normal.woff2": "/static/media/ubuntu-cyrillic-700-normal.fad9440ec2b1bc4ee9f5.woff2",
+    "static/media/ubuntu-greek-ext-700-normal.woff2": "/static/media/ubuntu-greek-ext-700-normal.fdaa9645b54f6bd666f9.woff2",
+    "static/media/ubuntu-greek-700-normal.woff2": "/static/media/ubuntu-greek-700-normal.debd2fb62678f7a002e4.woff2",
     "index.html": "/index.html",
-    "main.02a84a21.css.map": "/static/css/main.02a84a21.css.map",
-    "main.7c2ee417.js.map": "/static/js/main.7c2ee417.js.map",
+    "main.d6de7169.css.map": "/static/css/main.d6de7169.css.map",
+    "main.0efe4617.js.map": "/static/js/main.0efe4617.js.map",
     "787.216a21da.chunk.js.map": "/static/js/787.216a21da.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.02a84a21.css",
-    "static/js/main.7c2ee417.js"
+    "static/css/main.d6de7169.css",
+    "static/js/main.0efe4617.js"
   ]
 }
