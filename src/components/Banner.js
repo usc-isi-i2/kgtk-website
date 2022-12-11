@@ -63,7 +63,7 @@ const Text = styled('text')(`
   stroke-width: 0;
   stroke-dasharray: 100% 0;
   animation-name: stroke-animation;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-delay: 0.15s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
@@ -80,8 +80,8 @@ const Description = styled('text')(`
   stroke-width: 0;
   stroke-dasharray: 100% 0;
   animation-name: stroke-animation;
-  animation-duration: 4s;
-  animation-delay: 0.15s;
+  animation-duration: 3s;
+  animation-delay: 0s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
 `)
