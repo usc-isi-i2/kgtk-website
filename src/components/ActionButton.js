@@ -1,9 +1,13 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom'
+
 import Button from '@mui/material/Button'
 import { styled } from '@mui/material/styles'
 
 import '@fontsource/montserrat/700.css'
+
+import { button } from '../content/home'
 
 
 const StyledActionButton = styled(Button)(`
@@ -30,9 +34,11 @@ const ActionButton = () => {
 
   const renderActionButton = () => {
     return (
-      <StyledActionButton variant="contained" size="large">
-        CALL TO ACTION
-      </StyledActionButton>
+      <Link to={button.url}>
+        <StyledActionButton variant="contained" size="large">
+          {button.text}
+        </StyledActionButton>
+      </Link>
     )
   }
 
