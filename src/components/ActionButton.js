@@ -35,7 +35,7 @@ const StyledActionButton = styled(Button)(`
   animation-iteration-count: infinite;
 
   position: absolute;
-  right: 5vw;
+  left: 7vw;
   bottom: 10vh;
   color: #fefefe;
   background: #32CD32;
