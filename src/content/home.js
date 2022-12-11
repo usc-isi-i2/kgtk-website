@@ -1,3 +1,8 @@
+export const info = {
+  title: 'KGTK',
+  description: 'Knowledge Graph ToolKit',
+}
+
 export const links = [{
   name: 'So you like tutorials, huh',
   url: '/tutorials',
