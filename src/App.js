@@ -12,8 +12,15 @@ import ContentRouter from './components/ContentRouter'
 
 
 let theme = createTheme({
-  overrides: {
+  components: {
     MuiCssBaseline: {
+      styleOverrides: {
+        body: {
+          overflow: 'hidden',
+        },
+      },
+  },
+  overrides: {
       '@global': {
         html: {
           WebkitFontSmoothing: 'auto',
