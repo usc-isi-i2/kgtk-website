@@ -15,7 +15,7 @@ const BannerImage = styled('div')(`
   width: 100%;
   height: 100%;
   opacity: 1;
-  background: url(${bannerImage});
+  background: url(${bannerImage}) 50% 50% / cover no-repeat scroll rgb(35, 35, 35);
   transition: opacity 500ms ease-in 0s;
   pointer-events: none;
   user-select: none;
