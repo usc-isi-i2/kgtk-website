@@ -2,7 +2,7 @@ import React from 'react'
 
 import { styled } from '@mui/material/styles'
 
-import '@fontsource/montserrat/700.css'
+import '@fontsource/ubuntu/700.css'
 
 import { info } from '../content/home'
 import bannerImage from '../images/banner.jpg'
