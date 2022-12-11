@@ -50,6 +50,12 @@ const StyledActionButton = styled(Button)(`
   &:hover {
     background: #2bae2b;
   }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 2rem;
+    left: 10vw;
+    width: 80vw;
+  }
 `)
 
 
