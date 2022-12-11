@@ -15,22 +15,19 @@ let theme = createTheme({
   components: {
     MuiCssBaseline: {
       styleOverrides: {
-        body: {
-          overflow: 'hidden',
-        },
-      },
-  },
-  overrides: {
-      '@global': {
         html: {
           WebkitFontSmoothing: 'auto',
         },
         body: {
           background: '#fefefe',
+          overflow: 'hidden',
+          padding: '25px',
           color: '#333',
         },
       },
     },
+  },
+  overrides: {
     MuiAppBar: {
       colorPrimary: {
         backgroundColor: '#fefefe',
