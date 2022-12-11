@@ -11,6 +11,29 @@ import { button } from '../content/home'
 
 
 const StyledActionButton = styled(Button)(`
+  @keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+    47.5% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.15);
+    }
+    52.5% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  animation-name: scale;
+  animation-duration: 15s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+
   position: absolute;
   right: 5vw;
   bottom: 10vh;
