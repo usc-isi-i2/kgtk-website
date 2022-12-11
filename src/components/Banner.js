@@ -27,6 +27,7 @@ const Title = styled('h1')(`
   display: inline-block;
   width: 100%;
   padding: 0 5vw;
+  letter-spacing: 0.15em;
   margin: 2.5rem 0 0.5rem 0;
   text-align: right;
   font-family: "Montserrat";
