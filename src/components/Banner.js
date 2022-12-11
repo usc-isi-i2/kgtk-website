@@ -23,34 +23,67 @@ const BannerImage = styled('div')(`
 `)
 
 
-const Title = styled('h1')(`
-  display: inline-block;
+const SVG = styled('svg')(`
+  position: absolute;
   width: 100%;
-  padding: 0 5vw;
-  letter-spacing: 0.15em;
-  margin: 2.5rem 0 0.5rem 0;
-  text-align: right;
-  font-family: "Montserrat";
-  font-size: 7rem;
-  color: #fefefe;
-  pointer-events: none;
-  user-select: none;
-  z-index: 1;
+  height: 100%;
+
+  @keyframes stroke-animation {
+    0% {
+      fill-opacity: 0;
+      stroke-width: 0;
+      stroke-dasharray: 0% 100%;
+    }
+    25% {
+      stroke-opacity: 1;
+      stroke-width: 5px;
+    }
+    50% {
+      fill-opacity: 0;
+    }
+    75% {
+      stroke-width: 5px;
+    }
+    100% {
+      fill: #fff;
+      fill-opacity: 1;
+      stroke-width: 0;
+    }
+  }
 `)
 
 
-const Description = styled('h4')(`
-  display: inline-block;
-  width: 100%;
-  padding: 0 5vw;
-  margin: 1rem 0;
-  text-align: right;
-  font-family: "Montserrat";
-  font-size: 7rem;
+const Text = styled('text')(`
   color: #fefefe;
-  pointer-events: none;
-  user-select: none;
-  z-index: 1;
+  stroke: #fefefe;
+  font: 10em "Ubuntu";
+  letter-spacing: 0.15em;
+  fill-opacity: 0;
+  stroke-opacity: 0;
+  stroke-width: 0;
+  stroke-dasharray: 100% 0;
+  animation-name: stroke-animation;
+  animation-duration: 2s;
+  animation-delay: 0.15s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+`)
+
+
+const Description = styled('text')(`
+  color: #fefefe;
+  stroke: #fefefe;
+  font: 5em "Ubuntu";
+  letter-spacing: 0.05em;
+  fill-opacity: 0;
+  stroke-opacity: 0;
+  stroke-width: 0;
+  stroke-dasharray: 100% 0;
+  animation-name: stroke-animation;
+  animation-duration: 4s;
+  animation-delay: 0.15s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
 `)
 
 
@@ -63,8 +96,14 @@ const Banner = () => {
   const renderProjectInfo = () => {
     return (
       <React.Fragment>
-        <Title>{info.title}</Title>
-        <Description>{info.description}</Description>
+        <SVG viewBox="0 0 1280 720">
+          <Text text-anchor="middle" x="60%" y="25%">
+            {info.title}
+          </Text>
+          <Description text-anchor="middle" x="16%" y="42%">
+            {info.description}
+          </Description>
+        </SVG>
       </React.Fragment>
     )
   }
