@@ -27,6 +27,9 @@ const SVG = styled('svg')(`
   position: absolute;
   width: 100%;
   height: 100%;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
 
   @keyframes stroke-animation {
     0% {
