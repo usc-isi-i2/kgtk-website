@@ -3,6 +3,11 @@ export const info = {
   description: 'Knowledge Graph ToolKit',
 }
 
+export const button = {
+  text: 'Let\'s goooo!',
+  url: '/getting-started',
+}
+
 export const links = [{
   name: 'So you like tutorials, huh',
   url: '/tutorials',
