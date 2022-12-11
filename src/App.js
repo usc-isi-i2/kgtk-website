@@ -12,18 +12,22 @@ import ContentRouter from './components/ContentRouter'
 
 
 let theme = createTheme({
-  overrides: {
+  components: {
     MuiCssBaseline: {
-      '@global': {
+      styleOverrides: {
         html: {
           WebkitFontSmoothing: 'auto',
         },
         body: {
           background: '#fefefe',
+          overflow: 'hidden',
+          padding: '25px',
           color: '#333',
         },
       },
     },
+  },
+  overrides: {
     MuiAppBar: {
       colorPrimary: {
         backgroundColor: '#fefefe',
