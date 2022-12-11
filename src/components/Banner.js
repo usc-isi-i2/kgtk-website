@@ -21,9 +21,13 @@ const BannerImage = styled('img')(`
 
 const Banner = () => {
 
+  const renderBannerImage = () => {
+    return  <BannerImage src={bannerImage} />
+  }
+
   return (
     <React.Fragment>
-      <BannerImage src={bannerImage} />
+      {renderBannerImage()}
     </React.Fragment>
   )
 }
