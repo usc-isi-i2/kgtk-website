@@ -96,7 +96,7 @@ const Banner = () => {
     return  <BannerImage />
   }
 
-  const renderProjectInfo = () => {
+  const renderTitle = () => {
     return (
       <React.Fragment>
         <SVG viewBox="0 0 1280 720">
@@ -114,7 +114,7 @@ const Banner = () => {
   return (
     <React.Fragment>
       {renderBannerImage()}
-      {renderProjectInfo()}
+      {renderTitle()}
     </React.Fragment>
   )
 }
