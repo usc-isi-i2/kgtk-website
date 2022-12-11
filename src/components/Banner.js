@@ -105,10 +105,10 @@ const Banner = () => {
     return (
       <React.Fragment>
         <SVG viewBox="0 0 1280 720">
-          <Text text-anchor="middle" x="60%" y="25%">
+          <Text text-anchor="middle" x="0%" y="25%">
             {info.title}
           </Text>
-          <Description text-anchor="middle" x="16%" y="42%">
+          <Description text-anchor="middle" x="0%" y="42%">
             {info.description}
           </Description>
         </SVG>
