@@ -1,7 +1,5 @@
 import React from 'react'
 
-import { Link } from 'react-router-dom'
-
 import Button from '@mui/material/Button'
 import { styled } from '@mui/material/styles'
 
@@ -63,11 +61,14 @@ const ActionButton = () => {
 
   const renderActionButton = () => {
     return (
-      <Link to={button.url}>
-        <StyledActionButton variant="contained" size="large">
-          {button.text}
-        </StyledActionButton>
-      </Link>
+      <StyledActionButton
+        variant="contained"
+        size="large"
+        target="_blank"
+        href={button.url}
+        rel="noopener noreferrer">
+        {button.text}
+      </StyledActionButton>
     )
   }
 
