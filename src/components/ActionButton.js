@@ -43,7 +43,7 @@ const StyledActionButton = styled(Button)(`
   text-transform: uppercase;
   text-align: center;
   font-size: 3rem;
-  width: 500px;
+  width: auto;
   height: 100px;
   z-index: 99;
 
