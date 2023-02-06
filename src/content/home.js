@@ -4,7 +4,7 @@ export const info = {
 }
 
 export const button = {
-  text: 'Getting Started',
+  text: 'Get Started',
   url: 'https://kgtk.readthedocs.io/en/latest/install/',
 }
 
