@@ -15,7 +15,7 @@ const Tutorials = () => {
     <Content>
       <h1>Tutorials</h1>
       {links.map(link => (
-        <Card>
+        <Card key={link.name}>
           <Box sx={{
             display: 'flex',
             flexDirection: 'row'
@@ -26,7 +26,7 @@ const Tutorials = () => {
               image={link.image}
               title={link.name} />
             <CardContent>
-              <Link key={link.name} href={link.url} underline="hover" target="_blank" rel="noopener noreferrer">
+              <Link href={link.url} underline="hover" target="_blank" rel="noopener noreferrer">
                 <Typography component="h5" variant="h5">
                   <b>{link.name}</b>
                 </Typography>
