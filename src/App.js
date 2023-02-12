@@ -26,6 +26,14 @@ let theme = createTheme({
         },
       },
     },
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          marginBottom: '1em',
+          background: '#efefef',
+        },
+      },
+    },
   },
   overrides: {
     MuiAppBar: {
