@@ -1,6 +1,5 @@
 import React from 'react'
 import Box from '@mui/material/Box'
-import Link from '@mui/material/Link'
 import Card from '@mui/material/Card'
 import CardMedia from '@mui/material/CardMedia'
 import CardContent from '@mui/material/CardContent'
@@ -26,11 +25,9 @@ const UseCases = () => {
               image={link.image}
               title={link.name} />
             <CardContent>
-              <Link href={link.url} underline="hover" target="_blank" rel="noopener noreferrer">
-                <Typography component="h5" variant="h5">
-                  <b>{link.name}</b>
-                </Typography>
-              </Link>
+              <Typography component="h5" variant="h5">
+                <b>{link.name}</b>
+              </Typography>
               <Typography component="p" variant="body1">
                 {link.description}
               </Typography>
