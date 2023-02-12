@@ -57,7 +57,7 @@ const SVG = styled('svg')(`
 `)
 
 
-const Text = styled('text')(`
+const Title = styled('text')(`
   color: #fefefe;
   stroke: #fefefe;
   font: 10em "Ubuntu";
@@ -105,9 +105,9 @@ const Banner = () => {
     return (
       <React.Fragment>
         <SVG viewBox="0 0 1280 720">
-          <Text text-anchor="middle" x="-5%" y="25%">
+          <Title text-anchor="middle" x="-5%" y="25%">
             {info.title}
-          </Text>
+          </Title>
           <Description text-anchor="middle" x="-5%" y="42%">
             {info.description}
           </Description>
