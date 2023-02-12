@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.800479d0.css",
-    "main.js": "/static/js/main.5f70afad.js",
+    "main.js": "/static/js/main.cf421fae.js",
     "static/js/787.216a21da.chunk.js": "/static/js/787.216a21da.chunk.js",
     "static/media/banner.jpg": "/static/media/banner.5733b9e6f456a633611f.jpg",
     "static/media/ubuntu-all-700-normal.woff": "/static/media/ubuntu-all-700-normal.8c943554af3c5cb1937f.woff",
@@ -19,11 +19,11 @@
     "static/media/montserrat-vietnamese-700-normal.woff2": "/static/media/montserrat-vietnamese-700-normal.810d24ff481f2abee5c1.woff2",
     "index.html": "/index.html",
     "main.800479d0.css.map": "/static/css/main.800479d0.css.map",
-    "main.5f70afad.js.map": "/static/js/main.5f70afad.js.map",
+    "main.cf421fae.js.map": "/static/js/main.cf421fae.js.map",
     "787.216a21da.chunk.js.map": "/static/js/787.216a21da.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.800479d0.css",
-    "static/js/main.5f70afad.js"
+    "static/js/main.cf421fae.js"
   ]
 }
