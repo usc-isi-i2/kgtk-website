@@ -20,7 +20,6 @@ let theme = createTheme({
         },
         body: {
           background: '#fefefe',
-          overflow: 'hidden',
           padding: '25px',
           color: '#333',
         },

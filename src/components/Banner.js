@@ -27,7 +27,7 @@ const BannerImage = styled('div')(`
 const SVG = styled('svg')(`
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: calc(100% - 100px);
   pointer-events: none;
   user-select: none;
   z-index: 1;
