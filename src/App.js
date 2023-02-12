@@ -30,7 +30,7 @@ let theme = createTheme({
       styleOverrides: {
         root: {
           marginBottom: '1em',
-          background: '#efefef',
+          background: '#f7f7fa',
         },
       },
     },
