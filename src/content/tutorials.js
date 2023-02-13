@@ -1,6 +1,6 @@
 export const links = [{
   name: '1. Query knowledge graphs with KGTK Kypher',
-  description: 'This introduction tutorial gives an overview of the core features of the KGTK Kypher query language.',
+  description: 'This introduction tutorial gives an overview of the core features of the KGTK Kypher query language. Check out the Kypher paper on this link (https://wikidataworkshop.github.io/2022/papers/Wikidata_Workshop_2022_paper_7722.pdf) for more details.',
   url: 'https://colab.research.google.com/drive/1dQeJSYQwpNdIvC9H00SQ90usiUgu3o1E?usp=sharing',
   image: 'https://raw.githubusercontent.com/usc-isi-i2/kgtk-website/develop/src/images/tutorials/1_kypher.png',
 }, {
