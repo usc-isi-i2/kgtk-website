@@ -1,6 +1,6 @@
 export const links = [{
   name: '1. Query knowledge graphs with KGTK Kypher',
-  description: 'This introduction tutorial gives an overview of the core features of the KGTK Kypher query language.',
+  description: 'This introduction tutorial gives an overview of the core features of the KGTK Kypher query language. Check out the Kypher paper on this link (https://wikidataworkshop.github.io/2022/papers/Wikidata_Workshop_2022_paper_7722.pdf) for more details.',
   url: 'https://colab.research.google.com/drive/1dQeJSYQwpNdIvC9H00SQ90usiUgu3o1E?usp=sharing',
   image: 'https://raw.githubusercontent.com/usc-isi-i2/kgtk-website/develop/src/images/tutorials/1_kypher.png',
 }, {
@@ -9,7 +9,7 @@ export const links = [{
   url: 'https://colab.research.google.com/drive/1jwq_vVWWwiEa8izA0UZZ_CMK1qIMxBQh?usp=sharing',
   image: 'https://raw.githubusercontent.com/usc-isi-i2/kgtk-website/develop/src/images/tutorials/2_profiling.png',
 }, {
-  name: '3. Computing KG Embeddings',
+  name: '3. Computing Graph Embeddings',
   description: 'In this notebook we will compute graph embeddings using kgtk graph-embeddings command for the arnold subgraph and demonstrate a few applications.',
   url: 'https://colab.research.google.com/drive/1Fl4_5LLEtapOxtVlo57hwpPzEK1gFViL?usp=sharing',
   image: 'https://raw.githubusercontent.com/usc-isi-i2/kgtk-website/develop/src/images/tutorials/3_kge.png',
