@@ -2,17 +2,17 @@ export const links = [{
   name: '1. Query knowledge graphs with KGTK Kypher',
   description: 'This introduction tutorial gives an overview of the core features of the KGTK Kypher query language.',
   url: 'https://colab.research.google.com/drive/1dQeJSYQwpNdIvC9H00SQ90usiUgu3o1E?usp=sharing',
-  image: 'https://raw.githubusercontent.com/usc-isi-i2/kgtk-website/develop/src/images/tutorials/temp.jpg',
+  image: 'https://raw.githubusercontent.com/usc-isi-i2/kgtk-website/develop/src/images/tutorials/1_kypher.png',
 }, {
   name: '2. Knowledge Graph Profiling',
   description: 'The goal of profiling is to produce a summary of the classes, properties and instances present in a KG. Profiling is challenging because it is computationally expensive as the queries touch large parts of the KG. In this of the tutorial, you will learn how to use KGTK to profile a KG, and how KGTK addresses the computational challenges of computing profiles. Along the way, you will learn advanced uses of the KGTK query command. At the end, you will load the profile data in the browsesr so that you can get more insights into the knowledge present in the tutorial KG.',
   url: 'https://colab.research.google.com/drive/1jwq_vVWWwiEa8izA0UZZ_CMK1qIMxBQh?usp=sharing',
-  image: 'https://raw.githubusercontent.com/usc-isi-i2/kgtk-website/develop/src/images/tutorials/temp.jpg',
+  image: 'https://raw.githubusercontent.com/usc-isi-i2/kgtk-website/develop/src/images/tutorials/2_profiling.png',
 }, {
-  name: '03-kg-graph-embeddings',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mi leo, ultrices vehicula enim quis, consequat pharetra tellus. Pellentesque viverra placerat ultrices. Curabitur lacinia enim arcu, ac tristique mauris fermentum id. Cras varius erat lectus. Suspendisse sit amet purus quis nibh molestie ullamcorper. Ut at malesuada diam. Vestibulum congue risus id purus dignissim gravida. Cras nunc magna, vehicula non mattis ut, gravida consectetur nisl. Integer tristique nibh iaculis quam suscipit aliquet. Donec vel leo arcu. Pellentesque a aliquam justo, quis tincidunt nisl. Sed ultricies placerat arcu maximus auctor. Suspendisse sit amet sapien nisl. Suspendisse in purus interdum, consequat urna semper, malesuada orci. Curabitur suscipit sed risus sit amet malesuada.',
+  name: '3. Computing Graph Embeddings',
+  description: 'In this notebook we will compute graph embeddings using kgtk graph-embeddings command for the arnold subgraph and demonstrate a few applications.',
   url: 'https://colab.research.google.com/drive/1Fl4_5LLEtapOxtVlo57hwpPzEK1gFViL?usp=sharing',
-  image: 'https://raw.githubusercontent.com/usc-isi-i2/kgtk-website/develop/src/images/tutorials/temp.jpg',
+  image: 'https://raw.githubusercontent.com/usc-isi-i2/kgtk-website/develop/src/images/tutorials/3_kge.png',
 }, {
   name: '4. Augment A Knowledge Graph Using CSV Files',
   description: 'A common knowledge graph augmentation use case is to integrate structured data present in databases, CSV and Excel files. KGTK provides an alternative to languages such as R2RML (https://www.w3.org/TR/r2rml/) and RML (https://rml.io/specs/rml/) or tools such as Karma (https://github.com/usc-isi-i2/Web-Karma) for integrating tabular data. These languages and tools work by defining a mapping between a structured source and an ontology. KGTK provides capabilities to transform the original structured data into the TSV format used in KGTK to store KGs. This tutorial illustrates the KGTK approach using a CSV file downloaded from Kaggle (https://www.kaggle.com/stefanoleone992/imdb-extensive-dataset) containing information about moves from IMDb (https://www.imdb.com/).',
