@@ -32,5 +32,5 @@ export const links = [{
   name: '7. Constraint validation example',
   description: 'In this notebook we will run a simple constraint validation query against the Arnold KG. We will run on the property P276 (location). This notebooks does the following tasks: 1- Simple query for records of P276, with examples. 2- Type/Value type constraint validation with kgtk queries. 3- Explorarion of an example',
   url: 'https://colab.research.google.com/drive/182ikHCeGDhyPs8WuLQC03c-ET84p0ozM?usp=sharing',
-  image: 'https://raw.githubusercontent.com/usc-isi-i2/kgtk-website/develop/src/images/tutorials/7_constraint.png',
+  image: 'https://raw.githubusercontent.com/usc-isi-i2/kgtk-website/develop/src/images/tutorials/7_constraints.png',
 }]
