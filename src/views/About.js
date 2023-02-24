@@ -9,6 +9,7 @@ const About = () => {
   return (
     <Content>
       <h1>Something about the project and about us</h1>
+      <hr />
       {links.map(link => (
         <Link href={link.url} underline="hover" target="_blank" rel="noopener noreferrer">
           <h4>{link.name}</h4>

@@ -14,6 +14,7 @@ const UseCases = () => {
   return (
     <Content>
       <h1>Use Cases</h1>
+      <hr />
       {links.map(link => (
         <Card key={link.name}>
           <Box sx={{

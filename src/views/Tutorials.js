@@ -15,6 +15,7 @@ const Tutorials = () => {
   return (
     <Content>
       <h1>Tutorials</h1>
+      <hr />
       {links.map(link => (
         <Card key={link.name}>
           <Box sx={{
