@@ -16,10 +16,6 @@ const routes = [{
   path: '/tutorials',
   element: <Tutorials />,
 }, {
-  name: 'Getting Started',
-  path: '/getting-started',
-  element: <GettingStarted />,
-}, {
   name: 'Data',
   path: '/data',
   element: <Data />,
