@@ -28,8 +28,15 @@ let theme = createTheme({
     MuiCard: {
       styleOverrides: {
         root: {
-          marginBottom: '1em',
+          marginBottom: '3em',
           background: '#f7f7fa',
+        },
+      },
+    },
+    MuiCardMedia: {
+      styleOverrides: {
+        root: {
+          maxWidth: '40vw',
         },
       },
     },
