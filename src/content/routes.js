@@ -1,6 +1,5 @@
 import Home from '../views/Home'
 import Tutorials from '../views/Tutorials'
-import GettingStarted from '../views/GettingStarted'
 import Data from '../views/Data'
 import Resources from '../views/Resources'
 import UseCases from '../views/UseCases'
@@ -15,10 +14,6 @@ const routes = [{
   name: 'Tutorials',
   path: '/tutorials',
   element: <Tutorials />,
-}, {
-  name: 'Getting Started',
-  path: '/getting-started',
-  element: <GettingStarted />,
 }, {
   name: 'Data',
   path: '/data',
