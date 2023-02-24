@@ -4,6 +4,7 @@ import Card from '@mui/material/Card'
 import CardMedia from '@mui/material/CardMedia'
 import CardContent from '@mui/material/CardContent'
 import Typography from '@mui/material/Typography'
+import Linkify from 'react-linkify'
 
 import Content from '../components/Content'
 import { links } from '../content/use-cases'
@@ -29,7 +30,9 @@ const UseCases = () => {
                 <b>{link.name}</b>
               </Typography>
               <Typography component="p" variant="body1">
-                {link.description}
+                <Linkify>
+                  {link.description}
+                </Linkify>
               </Typography>
             </CardContent>
           </Box>
