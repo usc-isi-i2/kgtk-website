@@ -49,8 +49,12 @@ const Publication = ({ data }) => {
 
   return (
     <Wrapper>
-      <Typography component="h5" variant="h5">{data.title}</Typography>
-      <Typography component="p" variant="body1">{data.authors}</Typography>
+      <Typography component="h5" variant="h5">
+        {data.title}
+      </Typography>
+      <Typography component="p" variant="body1">
+        {data.authors}
+      </Typography>
       {!!data.booktitle ? (
         <Typography component="p" variant="body1">
           {`${data.booktitle} ${!!data.year ? data.year : ''}`}
@@ -86,5 +90,6 @@ const Publication = ({ data }) => {
     </Wrapper>
   )
 }
+
 
 export default Publication
