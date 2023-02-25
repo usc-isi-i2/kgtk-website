@@ -27,10 +27,11 @@ const BibtexButton = styled(Button)(`
 
 
 const Bibtex = styled(Paper)(`
-  padding: 1em;
+  line-height: 1.2em;
   font-size: 1em;
   white-space: pre;
   overflow: scroll;
+  padding: 1em;
 `)
 
 
