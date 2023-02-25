@@ -36,6 +36,44 @@ const Publications = () => {
     ))
   }
 
+  const formatBibtex = entry => {
+    let formatted =
+`@${entry.type}{${entry._id},`
+    const title = entry.getFieldAsString('title')
+    if ( !!title ) {
+      formatted += `
+  title={${title}},`
+    }
+    const author = entry.getFieldAsString('author')
+    if ( !!author ) {
+      formatted += `
+  author={${author}},`
+    }
+    const booktitle = entry.getFieldAsString('booktitle')
+    if ( !!booktitle ) {
+      formatted += `
+  booktitle={${booktitle}},`
+    }
+    const pages = entry.getFieldAsString('pages')
+    if ( !!pages ) {
+      formatted += `
+  pages={${pages}},`
+    }
+    const year = entry.getFieldAsString('year')
+    if ( !!year ) {
+      formatted += `
+  year={${year}},`
+    }
+    const organization = entry.getFieldAsString('organization')
+    if ( !!organization ) {
+      formatted += `
+  organization={${organization}},`
+    }
+    formatted += `
+}`
+    return formatted
+  }
+
   const normalizeValue = (entry, field) => {
     return (
       normalizeFieldValue(entry.getField(field)) || ''
@@ -63,7 +101,7 @@ const Publications = () => {
         authors: getAuthors(entry),
         url: normalizeFieldValue(entry.getField('url')),
         type: entry.type.charAt(0).toUpperCase() + entry.type.slice(1),
-        bibtex: publications[key.toLowerCase()],
+        bibtex: formatBibtex(entry),
       }
       return (
         <Publication key={key} data={data} />
