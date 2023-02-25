@@ -59,14 +59,16 @@ const Publication = ({ data }) => {
           {`${data.type} published in ${!!data.journal ? `${data.journal}; ` : ''} ${!!data.year ? data.year : ''}`}
         </Typography>
       )}
-      <BibtexButton
-        variant="text"
-        disableRipple={true}
-        disableFocusRipple={true}
-        endIcon={!!showBibtex ? <ExpandLessIcon /> : <ExpandMoreIcon />}
-        onClick={() => handleOnClick()}>
-        BibTeX
-      </BibtexButton>
+      {!!data.bibtex && (
+        <BibtexButton
+          variant="text"
+          disableRipple={true}
+          disableFocusRipple={true}
+          endIcon={!!showBibtex ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+          onClick={() => handleOnClick()}>
+          BibTeX
+        </BibtexButton>
+      )}
       {!!data.url ? (
         <IconButton component={Link} href={data.url} target="_blank" rel="noopener noreferrer">
           <PictureAsPdfIcon />
