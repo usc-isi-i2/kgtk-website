@@ -3,11 +3,13 @@ import React, { useEffect, useState } from 'react'
 import { parseBibFile, normalizeFieldValue } from 'bibtex'
 
 import Content from '../components/Content'
+import Publication from '../components/Publication'
 import references from '../content/references.bib'
 
 
 const Publications = () => {
 
+  const [search, setSearch] = useState('')
   const [publications, setPublications] = useState()
 
   useEffect(() => {
@@ -22,9 +24,51 @@ const Publications = () => {
 
   }, [])
 
+  const getAuthors = entry => {
+    const authors = entry.getField('author')
+    if ( !authors ) { return '' }
+    return authors.authors$.map((author, i) => (
+      author.firstNames
+        .concat(author.vons)
+        .concat(author.lastNames)
+        .concat(author.jrs)
+        .join(' ') + `${(i < authors.authors$.length - 1) ? ', ' : ''}`
+    ))
+  }
+
+  const normalizeValue = (entry, field) => {
+    return (
+      normalizeFieldValue(entry.getField(field)) || ''
+    ).toString().toLowerCase()
+  }
+
   const renderPublications = () => {
     if ( !publications ) { return }
-    return Object.keys(publications.entries$).map(key => <h1>{key}</h1>)
+    const q = search.toLowerCase()
+    return Object.keys(publications.entries$).filter(key => {
+      const entry = publications.getEntry(key)
+      const year = normalizeValue(entry, 'year')
+      const title = normalizeValue(entry, 'title')
+      const journal = normalizeValue(entry, 'journal')
+      const booktitle = normalizeValue(entry, 'booktitle')
+      const authors = getAuthors(entry).toString().toLowerCase()
+      return year.includes(q) || title.includes(q) || journal.includes(q) || booktitle.includes(q)|| authors.includes(q)
+    }).map(key => {
+      const entry = publications.getEntry(key)
+      const data = {
+        year: normalizeFieldValue(entry.getField('year')),
+        title: normalizeFieldValue(entry.getField('title')),
+        journal: normalizeFieldValue(entry.getField('journal')),
+        booktitle: normalizeFieldValue(entry.getField('booktitle')),
+        authors: getAuthors(entry),
+        url: normalizeFieldValue(entry.getField('url')),
+        type: entry.type.charAt(0).toUpperCase() + entry.type.slice(1),
+        bibtex: publications[key.toLowerCase()],
+      }
+      return (
+        <Publication key={key} data={data} />
+      )
+    })
   }
 
   return (
