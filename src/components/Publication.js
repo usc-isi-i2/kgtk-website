@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Box from '@mui/material/Box'
 import Link from '@mui/material/Link'
 import Paper from '@mui/material/Paper'
+import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import IconButton from '@mui/material/IconButton'
 import ExpandLessIcon from '@mui/icons-material/ExpandLess'
@@ -11,31 +12,25 @@ import { styled } from '@mui/material/styles'
 
 
 const Wrapper = styled('div')(`
-  margin: 1em,
-  & h5: {
-    color: #111,
-  },
-  & p: {
-    color: #111,
-  },
+  margin-bottom: 2em;
 `)
 
 
-const BibtexButton = styled(Typography)(`
-  display: inline,
-  cursor: pointer,
-  user-select: none,
-  & .MuiSvgIcon-root: {
-    vertical-align: middle,
-  }
+const BibtexButton = styled(Button)(`
+  padding: 0 !important;
+  margin: 5px 0;
+  color: #111;
+  background-color: transparent !important;
+  cursor: pointer;
+  user-select: none;
 `)
 
 
 const Bibtex = styled(Paper)(`
-  padding: 1em,
-  font-size: 1em,
-  white-space: pre,
-  overflow: scroll,
+  padding: 1em;
+  font-size: 1em;
+  white-space: pre;
+  overflow: scroll;
 `)
 
 
@@ -65,15 +60,12 @@ const Publication = ({ data }) => {
         </Typography>
       )}
       <BibtexButton
-        component="p"
-        variant="body1"
+        variant="text"
+        disableRipple={true}
+        disableFocusRipple={true}
+        endIcon={!!showBibtex ? <ExpandLessIcon /> : <ExpandMoreIcon />}
         onClick={() => handleOnClick()}>
         BibTeX
-        {!!showBibtex ? (
-          <ExpandLessIcon />
-        ) : (
-          <ExpandMoreIcon />
-        )}
       </BibtexButton>
       {!!data.url ? (
         <IconButton component={Link} href={data.url} target="_blank" rel="noopener noreferrer">
