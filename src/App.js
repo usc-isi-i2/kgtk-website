@@ -40,6 +40,36 @@ let theme = createTheme({
         },
       },
     },
+    MuiFormLabel: {
+      styleOverrides: {
+        root: {
+          color: '#111',
+          '&.Mui-focused': {
+            color: '#333',
+          },
+        },
+      },
+    },
+    MuiInput: {
+      styleOverrides: {
+        root: {
+          '&.MuiInput-underline:after': {
+            borderBottomColor: '#333',
+          },
+        },
+      },
+    },
+    MuiTextField: {
+      styleOverrides: {
+        root: {
+          color: '#111',
+          marginBottom: '2em',
+          '&.Mui-focused': {
+            color: '#000',
+          },
+        },
+      },
+    },
   },
   overrides: {
     MuiAppBar: {
