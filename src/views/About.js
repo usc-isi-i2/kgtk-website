@@ -56,8 +56,8 @@ const About = () => {
       <h1>The KGTK Team</h1>
       <hr />
       {renderByRole('Researcher')}
-      {renderByRole('Collaborator')}
       {renderByRole('Engineer')}
+      {renderByRole('Collaborator')}
     </Content>
   )
 }
