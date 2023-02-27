@@ -8,7 +8,7 @@ import { links } from '../content/about'
 const About = () => {
   return (
     <Content>
-      <h1>Something about the project and about us</h1>
+      <h1>The KGTK Team</h1>
       <hr />
       {links.map(link => (
         <Link href={link.url} underline="hover" target="_blank" rel="noopener noreferrer">
