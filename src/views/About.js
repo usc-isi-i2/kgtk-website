@@ -32,7 +32,7 @@ const About = () => {
               <CardMedia
                 sx={{ height: 300 }}
                 component="img"
-                image={'http://placekitten.com/200/300'}
+                image={link.image}
                 title={link.name} />
               <CardContent>
                 <Typography component="h5" variant="h5" textAlign="center">
