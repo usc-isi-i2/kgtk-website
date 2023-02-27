@@ -1,19 +1,19 @@
 export const links = [{
-  name: 'Hans',
-  url: 'https://www.linkedin.com/in/hans-chalupsky-a3416b3/',
-}, {
-  name: 'Filip',
+  name: 'Filip Ilievski',
   url: 'https://www.linkedin.com/in/filipilievski91/',
 }, {
-  name: 'Pedro',
+  name: 'Hans Chalupsky',
+  url: 'https://www.linkedin.com/in/hans-chalupsky-a3416b3/',
+}, {
+  name: 'Pedro Szekely',
   url: 'https://www.linkedin.com/in/szeke/',
 }, {
-  name: 'Jay',
+  name: 'Jay Pujara',
   url: 'https://www.linkedin.com/in/pujara/',
 }, {
-  name: 'Amandeep',
+  name: 'Amandeep Singh',
   url: 'https://www.linkedin.com/in/amandeepsaggu/',
 }, {
-  name: 'Gleb',
+  name: 'Gleb Satyukov',
   url: 'https://www.linkedin.com/in/g1eb-/',
 }]

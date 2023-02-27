@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 import { parseBibFile, normalizeFieldValue } from 'bibtex'
 
+import Search from '../components/Search'
 import Content from '../components/Content'
 import Publication from '../components/Publication'
 import references from '../content/references.bib'
@@ -23,6 +24,10 @@ const Publications = () => {
       })
 
   }, [])
+
+  const handleUpdate = search => {
+    setSearch(search)
+  }
 
   const getAuthors = entry => {
     const authors = entry.getField('author')
@@ -113,6 +118,10 @@ const Publications = () => {
     <Content>
       <h1>Publications</h1>
       <hr />
+      <Search
+        text={search}
+        label={'search publications'}
+        updateText={handleUpdate} />
       {renderPublications()}
     </Content>
   )
