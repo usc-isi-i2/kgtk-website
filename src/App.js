@@ -36,7 +36,7 @@ let theme = createTheme({
     MuiCardMedia: {
       styleOverrides: {
         root: {
-          maxWidth: '40vw',
+          width: 'auto',
         },
       },
     },
