@@ -19,7 +19,12 @@ const UseCases = () => {
         <Card key={link.name}>
           <Box sx={{
             display: 'flex',
-            flexDirection: 'row'
+            flexDirection: {
+              xs: 'column',
+              sm: 'column',
+              md: 'row',
+              lg: 'row',
+            },
           }}>
             <CardMedia
               sx={{ height: 200 }}
