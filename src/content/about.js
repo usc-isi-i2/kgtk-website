@@ -21,7 +21,7 @@ export const links = [{
 }, {
   name: 'Yao Ke-Thia',
   role: 'Researcher',
-  url: 'https://www.linkedin.com/in/yao-ke-thia-ab74165/',
+  url: 'https://www.isi.edu/directory/kyao/',
   image: 'https://usc-isi-i2.github.io/img/people/Ki-Thia-Yao.jpg',
 }, {
   name: 'Daniel Schwabe',
@@ -36,7 +36,7 @@ export const links = [{
 }, {
   name: 'Craig Rogers',
   role: 'Engineer',
-  url: 'https://www.linkedin.com/in/amandeepsaggu/',
+  url: 'https://www.isi.edu/directory/rogers/',
   image: 'https://usc-isi-i2.github.io/img/people/Craig-Rogers.jpg',
 }, {
   name: 'Amandeep Singh',
@@ -46,6 +46,6 @@ export const links = [{
 }, {
   name: 'Gleb Satyukov',
   role: 'Engineer',
-  url: 'https://www.linkedin.com/in/g1eb-/',
+  url: 'https://www.isi.edu/directory/gleb/',
   image: 'https://usc-isi-i2.github.io/img/people/Gleb-Satyukov.jpg',
 }]
