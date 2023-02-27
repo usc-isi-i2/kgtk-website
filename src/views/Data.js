@@ -11,7 +11,7 @@ const Data = () => {
     <Content>
       <h1>Data Catalog</h1>
       <hr />
-      <Typography component="h5" variant="h5">
+      <Typography component="h4" variant="h4">
         Wikidata 11-2022
       </Typography>
       {links.map(link => (
