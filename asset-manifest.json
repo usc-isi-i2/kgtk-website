@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.800479d0.css",
-    "main.js": "/static/js/main.8d69314b.js",
+    "main.js": "/static/js/main.1ec0922b.js",
     "static/js/787.216a21da.chunk.js": "/static/js/787.216a21da.chunk.js",
     "static/media/banner.jpg": "/static/media/banner.5733b9e6f456a633611f.jpg",
     "static/media/ubuntu-all-700-normal.woff": "/static/media/ubuntu-all-700-normal.8c943554af3c5cb1937f.woff",
@@ -16,15 +16,15 @@
     "static/media/montserrat-latin-ext-700-normal.woff2": "/static/media/montserrat-latin-ext-700-normal.ed2b8a3421aea40bea12.woff2",
     "static/media/montserrat-cyrillic-ext-700-normal.woff2": "/static/media/montserrat-cyrillic-ext-700-normal.a113ef18975312602ee1.woff2",
     "static/media/montserrat-cyrillic-700-normal.woff2": "/static/media/montserrat-cyrillic-700-normal.2a599b68747a45fad239.woff2",
-    "static/media/references.bib": "/static/media/references.4bb0ef2b9d158b45b501.bib",
+    "static/media/references.bib": "/static/media/references.8709a8049919645ef9c9.bib",
     "static/media/montserrat-vietnamese-700-normal.woff2": "/static/media/montserrat-vietnamese-700-normal.810d24ff481f2abee5c1.woff2",
     "index.html": "/index.html",
     "main.800479d0.css.map": "/static/css/main.800479d0.css.map",
-    "main.8d69314b.js.map": "/static/js/main.8d69314b.js.map",
+    "main.1ec0922b.js.map": "/static/js/main.1ec0922b.js.map",
     "787.216a21da.chunk.js.map": "/static/js/787.216a21da.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.800479d0.css",
-    "static/js/main.8d69314b.js"
+    "static/js/main.1ec0922b.js"
   ]
 }
