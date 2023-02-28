@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 import Button from '@mui/material/Button'
 import { styled } from '@mui/material/styles'
@@ -57,14 +58,15 @@ const StyledActionButton = styled(Button)(`
 
 const ActionButton = ({ props }) => {
 
+  const navigate = useNavigate()
+
   const renderActionButton = () => {
     return (
       <StyledActionButton
         variant="contained"
         size="large"
         target="_blank"
-        href={props.link}
-        rel="noopener noreferrer">
+        onClick={() => navigate(props.link)}>
         {props.text}
       </StyledActionButton>
     )

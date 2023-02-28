@@ -3,7 +3,7 @@ export const info = {
   description: 'Knowledge Graph ToolKit',
 }
 
-export const button = {
+export const actionButton = {
   text: 'Get Started',
-  link: 'https://kgtk.readthedocs.io/en/latest/install/',
+  link: '/resources',
 }
