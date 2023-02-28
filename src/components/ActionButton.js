@@ -5,8 +5,6 @@ import { styled } from '@mui/material/styles'
 
 import '@fontsource/montserrat/700.css'
 
-import { button } from '../content/home'
-
 
 const StyledActionButton = styled(Button)(`
   @keyframes scale {
@@ -57,7 +55,7 @@ const StyledActionButton = styled(Button)(`
 `)
 
 
-const ActionButton = () => {
+const ActionButton = ({ props }) => {
 
   const renderActionButton = () => {
     return (
@@ -65,9 +63,9 @@ const ActionButton = () => {
         variant="contained"
         size="large"
         target="_blank"
-        href={button.url}
+        href={props.link}
         rel="noopener noreferrer">
-        {button.text}
+        {props.text}
       </StyledActionButton>
     )
   }
